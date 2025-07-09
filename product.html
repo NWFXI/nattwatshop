@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product - Notebook Shop</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Notebook Shop</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="knowledge.html">คู่มือเลือกซื้อโน๊ตบุ๊ค</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="products-section">
+    <div class="products-title" id="category-title">สินค้าโน๊ตบุ๊ค</div>
+    <div class="categories">
+      <button class="category-btn" onclick="showCategory('general')">โน๊ตบุ๊คทั่วไป</button>
+      <button class="category-btn" onclick="showCategory('work')">โน๊ตบุ๊คทำงาน</button>
+      <button class="category-btn" onclick="showCategory('gaming')">โน๊ตบุ๊คเกมมิ่ง</button>
+    </div>
+    <div class="products-grid" id="products-grid"></div>
+  </div>
+  <div class="footer">&copy; 2025 Notebook Shop. All rights reserved.</div>
+  <script src="assets/product.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

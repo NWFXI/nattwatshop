@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายละเอียดสินค้า - Notebook Shop</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .product-detail-container {
+      max-width: 800px;
+      margin: 2.5rem auto 2rem auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(30,55,153,0.10);
+      padding: 2.5rem 2rem 2rem 2rem;
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .product-gallery {
+      flex: 1 1 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    .product-main-img {
+      width: 260px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(30,55,153,0.08);
+      background: #f5f6fa;
+      transition: box-shadow 0.2s;
+    }
+    .product-thumbs {
+      display: flex;
+      gap: 0.7rem;
+      margin-top: 0.5rem;
+    }
+    .product-thumb {
+      width: 60px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 2px solid #e0e4f6;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: border 0.18s, opacity 0.18s;
+    }
+    .product-thumb.active, .product-thumb:hover {
+      border: 2px solid #fbc531;
+      opacity: 1;
+    }
+    .product-info {
+      flex: 2 1 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      justify-content: center;
+    }
+    .product-info-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1e3799;
+      margin-bottom: 0.2rem;
+    }
+    .product-info-price {
+      color: #fbc531;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+    }
+    .product-info-desc {
+      color: #444;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin-bottom: 0.7rem;
+    }
+    @media (max-width: 900px) {
+      .product-detail-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.2rem 0.5rem;
+        gap: 1.5rem;
+      }
+      .product-info {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Notebook Shop</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="knowledge.html">คู่มือเลือกซื้อโน๊ตบุ๊ค</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="products-section">
+    <div class="products-title" id="product-title">รายละเอียดสินค้า</div>
+    <div id="product-detail" style="max-width:600px;margin:2rem auto;"></div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="product.html" class="details-btn">ย้อนกลับ</a>
+    </div>
+  </div>
+  <div class="footer">&copy; 2025 Notebook Shop. All rights reserved.</div>
+  <script src="assets/product-data.js"></script>
+  <script src="assets/product-detail.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

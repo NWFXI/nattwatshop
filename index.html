@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notebook Shop - Home</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Nattawat Shop</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="knowledge.html">คู่มือเลือกซื้อโน๊ตบุ๊ค</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="banner-slider">
+    <div class="banner-slide active">
+      <img src="assets/image/1.jpg" alt="โปรโมชั่นโน๊ตบุ๊ค">
+    </div>
+    <div class="banner-slide">
+      <img src="assets/image/2.jpg" alt="โปรโมชั่นโน๊ตบุ๊ค">
+    </div>
+    <div class="banner-slide">
+      <img src="assets/image/3.jpg" alt="โปรโมชั่นโน๊ตบุ๊ค">
+    </div>
+    <div class="banner-dots">
+      <span class="banner-dot active"></span>
+      <span class="banner-dot"></span>
+      <span class="banner-dot"></span>
+    </div>
+  </div>
+  <div class="categories">
+    <button class="category-btn" onclick="goToCategory('general')">โน๊ตบุ๊คทั่วไป</button>
+    <button class="category-btn" onclick="goToCategory('work')">โน๊ตบุ๊คทำงาน</button>
+    <button class="category-btn" onclick="goToCategory('gaming')">โน๊ตบุ๊คเกมมิ่ง</button>
+  </div>
+  <div class="products-section">
+    <div class="products-title">สินค้าแนะนำ / สินค้าขายดี</div>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="assets/image/acer-aspire-a515-56g-55kf-silver-1.jpg" alt="Notebook 1">
+        <div class="product-name">Acer Aspire 5</div>
+        <div class="product-price">฿15,900</div>
+        <button class="details-btn" onclick="goToCategory('general')">ดูรายละเอียด</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/image/Dell-Notebook-Latitude3420-SNS3420004-Black-1.jpg" alt="Notebook 2">
+        <div class="product-name">Dell Latitude 3420</div>
+        <div class="product-price">฿25,900</div>
+        <button class="details-btn" onclick="goToCategory('work')">ดูรายละเอียด</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/image/Asus-Notebook-ROG-Strix-G15-GL542LV-HN102T-Black-1.jpg" alt="Notebook 3">
+        <div class="product-name">Asus ROG Strix G15</div>
+        <div class="product-price">฿39,900</div>
+        <button class="details-btn" onclick="goToCategory('gaming')">ดูรายละเอียด</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/image/HP-Notebook-15S-FQ1129TU-1.jpg" alt="Notebook 4">
+        <div class="product-name">HP 15s</div>
+        <div class="product-price">฿13,500</div>
+        <button class="details-btn" onclick="goToCategory('general')">ดูรายละเอียด</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/image/Screenshot 2025-07-06 223151.png" alt="Notebook 5">
+        <div class="product-name">Lenovo ThinkPad E14</div>
+        <div class="product-price">฿27,900</div>
+        <button class="details-btn" onclick="goToCategory('work')">ดูรายละเอียด</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/image/9S7-16R612-640-01.jpg" alt="Notebook 6">
+        <div class="product-name">MSI GF63 Thin</div>
+        <div class="product-price">฿32,900</div>
+        <button class="details-btn" onclick="goToCategory('gaming')">ดูรายละเอียด</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">&copy; 2025 Notebook Shop. All rights reserved.</div>
+  <script src="assets/main.js"></script>
+</body>
+</html>
